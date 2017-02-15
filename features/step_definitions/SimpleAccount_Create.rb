@@ -1,8 +1,8 @@
 
 Given(/^a logged in user on the Home Tab$/) do
   @browser.goto "http://sz-greased-dev-ed.my.salesforce.com"
-  @browser.text_field(:name => 'username').set 'szandor72+meetup@gmail.com'
-  @browser.text_field(:name => 'pw').set 'SalesforceMeetupsAreAwesome1!!1'
+  @browser.text_field(:name => 'username').set 'YOURUSERNAME'
+  @browser.text_field(:name => 'pw').set 'YOURPASSWORD'
   @browser.button(:name => 'Login').click
   @browser.span(:text => 'Home').wait_until_present
 end
